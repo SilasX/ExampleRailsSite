@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
 */
+
+header
+{
+
+}
+
+ul
+{
+list-style-type:none;
+margin:4;
+padding:2;
+} 
+
+li
+{
+display:inline;
+}
+
+a
+{
+display:block;
+width:60px;
+}
