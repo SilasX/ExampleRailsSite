@@ -1,11 +1,12 @@
 <div class = "header bar">
-	<%= user_signed_in?.to_s%><br>
-	<ul>
+	<p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+	<ul><div class = "button">
 		<% if user_signed_in? %>
 			<li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
 		<% else %>
 			<li><%= link_to "Sign In", new_user_session_path %></li>
 		<% end %>
 		<li><%= link_to "About", about_path %></li>
-	</ul>
+	</ul></div>
 </div>

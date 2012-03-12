@@ -1,6 +1,6 @@
 ExampleRailsSite::Application.routes.draw do
   devise_for :users
-  match '/about',   to: 'staticpages#about'
+  match 'about',   to: 'staticpages#about'
   root :to => "staticpages#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
