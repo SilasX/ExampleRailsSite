@@ -1,4 +1,6 @@
 ExampleRailsSite::Application.routes.draw do
+  resources :argument_nodes
+
   devise_for :users
   match 'about',   to: 'staticpages#about'
   root :to => "staticpages#index"
