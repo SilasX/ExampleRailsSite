@@ -1,5 +1,17 @@
 <h1>New argument_node</h1>
 
-<%= render 'form' %>
+<%= form_for @argument_node do |f| %>
+	<div class = "field">
+	<%= f.label "Explain the argument here" %><br>
+	<%= f.text_field :description %><br>
+	</div>
+	<div class = "field">
+	<%= f.label "What type of argument is this?" %><br>
+	<%= f.text_field :type %><br>
+	</div>
+	<div class = "field button submit">
+	<%= f.submit "Enter argument into graph."%>
+	</div>
+<% end %>
 
 <%= link_to 'Back', argument_nodes_path %>

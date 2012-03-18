@@ -1,0 +1,18 @@
+
+
+h1 {
+	font-family: Arial;
+	font-weight: plain;
+}
+
+.field {
+	margin-left: 10px;
+	padding: 20px;
+}
+
+.button {
+	font-family: Helvetica, Calibri, Arial, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+}

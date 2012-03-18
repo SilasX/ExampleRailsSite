@@ -1,5 +1,5 @@
 
-<ul><div class = "button">
+<div class = "button"><ul>
 	<% if user_signed_in? %>
 		<li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
 	<% else %>
@@ -7,4 +7,4 @@
 	<% end %>
 	<li><%= link_to "About", about_path %></li>
 	<li><%= link_to "Current Arguments", argument_nodes_path %></li>
-</div></ul>
+</ul></div><br>

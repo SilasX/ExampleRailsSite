@@ -34,9 +34,10 @@ ul
 {
 	list-style-type:none;
 	margin: 4px;
-	padding: 2px;
 } 
 
 li {
 	font-weight: bold;
+	float: left;
+	padding: 10px;
 }
