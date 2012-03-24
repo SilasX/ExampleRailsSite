@@ -11,11 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120316233001) do
+ActiveRecord::Schema.define(:version => 20120324052235) do
+
+  create_table "argument_connections", :force => true do |t|
+    t.integer  "source_argument_id"
+    t.integer  "target_argument_id"
+    t.string   "kind"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "argument_nodes", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.text     "explanation"
+    t.string   "kind"
   end
 
   create_table "users", :force => true do |t|

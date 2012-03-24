@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  source_argument_id: 1
+  target_argument_id: 1
+  kind: MyString
+
+two:
+  source_argument_id: 1
+  target_argument_id: 1
+  kind: MyString

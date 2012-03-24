@@ -1,5 +1,9 @@
 <h1>New argument_node</h1>
 
-<%= render 'form' %>
+<%= simple_form_for @argument_node do |f| %>
+	<%= f.input :kind, :label => "What kind of argument is this?" %><br>
+	<%= f.input :explanation, :label => "Explain this argument." %><br>
+	<%= f.button :submit %>
+<% end %>
 
 <%= link_to 'Back', argument_nodes_path %>
