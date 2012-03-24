@@ -1,0 +1,9 @@
+<h1>New argument connection</h1>
+
+<%= simple_form_for @argument_connection do |f| %>
+	<%= f.input :source_argument_id, :collection => @argument_nodes, :as => :grouped_select, :group_method => :explanation, :label => "This argument goes from ..." %><br>
+	<%= f.input :target_argument_id, :as => :grouped_select, :group_method => :explanation, :collection => @argument_nodes, :label => "To ... " %><br>
+	<%= f.button :submit %>
+<% end %>
+
+<%= link_to 'Back', argument_nodes_path %>

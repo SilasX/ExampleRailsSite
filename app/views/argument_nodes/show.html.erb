@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<div class="argument-kind">
+	Argument type: <%= @argument_node.kind %>
+</div>
+
+<div class="argument-explanation">
+	Explanation: <%= @argument_node.explanation %>
+</div>
 
 <%= link_to 'Edit', edit_argument_node_path(@argument_node) %> |
 <%= link_to 'Back', argument_nodes_path %>

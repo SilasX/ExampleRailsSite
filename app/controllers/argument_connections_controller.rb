@@ -25,7 +25,7 @@ class ArgumentConnectionsController < ApplicationController
   # GET /argument_connections/new.json
   def new
     @argument_connection = ArgumentConnection.new
-
+    @argument_nodes = ArgumentNode.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @argument_connection }
