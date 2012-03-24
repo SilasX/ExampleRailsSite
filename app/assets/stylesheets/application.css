@@ -9,53 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require staticpages
+ *= require argument_nodes
 */
 
-header
-{
-  float: right;
-  background-color: white;
-  padding: 0 0.7em;
-  white-space: nowrap;
-  margin-top: 1em;
-  font-size: 120%;
-  padding: 20px;
-  background: white;
-}
 
-header h1 {
-  font-size: 200%;
-}
-
-button
-{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  width: 190px;
-  color: white;
-  background: #006400;
-  font-size: 150%;
-  font-weight: bold;
-  padding: 20px;
-}
-
-ul
-{
-list-style-type:none;
-margin:4;
-padding:2;
-} 
-
-li
-{
-display:inline;
-}
-
-a
-{
-display:block;
-width:60px;
-}
