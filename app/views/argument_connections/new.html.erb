@@ -1,8 +1,16 @@
 <h1>New argument connection</h1>
 
 <%= simple_form_for @argument_connection do |f| %>
-	<%= f.input :source_argument_id, :collection => @argument_nodes, :as => :grouped_select, :group_method => :explanation, :label => "This argument goes from ..." %><br>
-	<%= f.input :target_argument_id, :as => :grouped_select, :group_method => :explanation, :collection => @argument_nodes, :label => "To ... " %><br>
+	<div class="argument-list">
+		<%= f.input :kind, :label => "This connection is of type ... " %>
+	</div>
+	<div class="argument-list">
+		<%= f.input :source_argument_id, :collection => ArgumentNode.all, :label_method => :explanation, :label => "This connection goes from ..." %>
+	</div>
+	<div class="argument-list">
+		<%= f.input :target_argument_id, :collection => ArgumentNode.all, :label_method => :explanation, :label => "To ..." %>
+	</div>
+	
 	<%= f.button :submit %>
 <% end %>
 

@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="connection-kind">
+	Connection type: <%= @argument_connection.kind %>
+</div>
+
+<div class="connection-source">
+	Source argument: <%= ArgumentNode.find(@argument_connection.source_argument_id).explanation %>
+</div>
+
+<div class="connection-target">
+	Target argument: <%= ArgumentNode.find(@argument_connection.target_argument_id).explanation %>
+</div>
+
+<%= link_to 'Edit', edit_argument_node_path(@argument_node) %> |
+<%= link_to 'Back', argument_nodes_path %>

@@ -13,4 +13,8 @@
  *= require argument_nodes
 */
 
+.container {
+	float:none;
+}
+
 
