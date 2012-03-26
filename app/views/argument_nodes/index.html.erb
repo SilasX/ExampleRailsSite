@@ -1,13 +1,13 @@
-<h1>Listing argument_nodes</h1>
+<h1>Listing argument nodes</h1>
 
 <% @argument_nodes.each do |argument_node| %>
   <p><tr>
+	<td><%= argument_node.preview(40) %></td>
     <td><%= link_to 'Show', argument_node %></td>
     <td><%= link_to 'Edit', edit_argument_node_path(argument_node) %></td>
     <td><%= link_to 'Destroy', argument_node, confirm: 'Are you sure?', method: :delete %></td>
   </tr></p>
 <% end %>
 
-<br />
 
 <%= link_to 'New Argument node', new_argument_node_path %>

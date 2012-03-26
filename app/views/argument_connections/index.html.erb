@@ -1,11 +1,15 @@
 <h1>Listing argument_connections</h1>
 
 <p class="argument-connection preview"><% @argument_connections.each do |argument_connection| %>
-  <tr>
+  <p><tr>
+	<td><%= argument_connection.source.preview(30) %></td>
+	<td> --> </td>
+	<td><%= argument_connection.target.preview(30) %></td>
+	<td><%= argument_connection.kind %></td>
     <td><%= link_to 'Show', argument_connection %></td>
     <td><%= link_to 'Edit', edit_argument_connection_path(argument_connection) %></td>
     <td><%= link_to 'Destroy', argument_connection, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  </tr></p>
 <% end %>
 </p>
 

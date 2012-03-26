@@ -5,11 +5,11 @@
 </div>
 
 <div class="connection-source">
-	Source argument: <%= ArgumentNode.find(@argument_connection.source_argument_id).explanation %>
+	Source argument: <%= @argument_connection.source.explanation %>
 </div>
 
 <div class="connection-target">
-	Target argument: <%= ArgumentNode.find(@argument_connection.target_argument_id).explanation %>
+	Target argument: <%= @argument_connection.target.explanation %>
 </div>
 
 <%= link_to 'Edit', edit_argument_node_path(@argument_node) %> |

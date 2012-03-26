@@ -2,7 +2,7 @@
 
 header
 {
-/*  float: left;*/
+  float: left;
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
@@ -13,7 +13,7 @@ header
 }
 
 header h1 {
-  font-size: 200%;
+  font-size: 100%;
 }
 
 button
@@ -38,6 +38,6 @@ ul
 
 li {
 	font-weight: bold;
-	float: left;
+	display: inline;
 	padding: 10px;
 }
