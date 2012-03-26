@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120324052235) do
+ActiveRecord::Schema.define(:version => 20120326020021) do
 
   create_table "argument_connections", :force => true do |t|
     t.integer  "source_argument_id"
@@ -24,8 +24,6 @@ ActiveRecord::Schema.define(:version => 20120324052235) do
   create_table "argument_nodes", :force => true do |t|
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "description"
-    t.string   "type"
     t.text     "explanation"
     t.string   "kind"
   end
