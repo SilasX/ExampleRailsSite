@@ -8,6 +8,7 @@ gem 'rails', '3.2.2'
 gem 'sqlite3'
 gem 'devise'
 gem 'simple_form'
+gem 'yaml_db' # rake db:data:dump to output to db/data.yml; rake db:data:load to load from same into database
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,6 +23,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'heroku'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

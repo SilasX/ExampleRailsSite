@@ -1,0 +1,11 @@
+
+---
+argument_connections:
+  columns:
+  - id
+  - source_argument_id
+  - target_argument_id
+  - kind
+  - created_at
+  - updated_at
+  records: 
