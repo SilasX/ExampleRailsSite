@@ -5,7 +5,15 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :production, :staging do
+  gem "pg"
+end
+
+
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
+end
+
 gem 'devise'
 gem 'simple_form'
 gem 'yaml_db' # rake db:data:dump to output to db/data.yml; rake db:data:load to load from same into database
